@@ -6,6 +6,7 @@ from rest_framework import permissions
 from django.conf import settings
 from django.conf.urls.static import static
 from core.views import health_check
+import os
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -17,6 +18,7 @@ schema_view = get_schema_view(
         license=openapi.License(name="MIT License"),
     ),
     public=True,
+    url=os.getenv("PROD_URL"),
     permission_classes=(permissions.AllowAny,),
 )
 urlpatterns = [

@@ -3,10 +3,10 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-26k+&l2$+%memw-30@63ql4zfid%cwsa48ha11+a50q=h75zfr"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ost-backend.onrender.com"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
