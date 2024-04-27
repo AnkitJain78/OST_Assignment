@@ -2,18 +2,25 @@
 
 This project serves as the backend logic for extracting email IDs, contact numbers, and overall text from CVs. It provides an API endpoint for uploading CV files, processing them, and downloading the extracted data in .XLS format.
 
+| Label                | Image URL                                               |
+|----------------------|---------------------------------------------------------|
+| Swagger Image 1      | ![Swagger Image 1](./screenshots/swagger-one.png)                     |
+| Swagger Image 2      | ![Swagger Image 2](./screenshots/swagger-two.png)                     |
+| Django Landing Page  | ![Django Landing Page](./screenshots/landing.jpeg)    |
+| File Model Page Admin| ![File Model Page Admin](./screenshots/file-model.jpeg) |
+
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AnkitJain78/OST_Backend.git
+   git clone https://github.com/AnkitJain78/OST-Assignment.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd OST_Backend
+   cd OST-Assignment
    ```
 
 3. Install dependencies:
@@ -37,13 +44,6 @@ This project serves as the backend logic for extracting email IDs, contact numbe
 ### API Endpoints
 
 - **POST /api/v1/upload**: Upload a CV file or multiple files for processing.
-
-## Features
-
-- Extract email and contact information from CV files (PDF, JPG, DOC, DOCX).
-- Extract text data from CV files.
-- Swagger API documentation for easy testing and integration.
-- Flexible and scalable Django project structure.
 
 ## Data Extraction
 
