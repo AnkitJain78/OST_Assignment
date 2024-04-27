@@ -14,13 +14,13 @@ This project serves as the backend logic for extracting email IDs, contact numbe
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AnkitJain78/OST-Assignment.git
+   git clone https://github.com/AnkitJain78/OST_Backend.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd OST-Assignment
+   cd OST_Backend
    ```
 
 3. Install dependencies:
@@ -44,6 +44,7 @@ This project serves as the backend logic for extracting email IDs, contact numbe
 ### API Endpoints
 
 - **POST /api/v1/upload**: Upload a CV file or multiple files for processing.
+- **Docs /swagger/**: Swagger Docs
 
 ## Data Extraction
 
