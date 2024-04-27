@@ -140,7 +140,7 @@ class EmailView(APIView):
                     {"var": "name", "value": first_name + " " + last_name},
                     {
                         "var": "action_url",
-                        "value": f"http://localhost:8000{download_url}",
+                        "value": f"{os.getenv("PROD_URL")}{download_url}",
                     },
                     {"var": "account.name", "value": "OST Placement Search"},
                 ],
