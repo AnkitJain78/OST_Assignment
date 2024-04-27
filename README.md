@@ -38,6 +38,13 @@ This project serves as the backend logic for extracting email IDs, contact numbe
 
 - **POST /api/v1/upload**: Upload a CV file or multiple files for processing.
 
+## Features
+
+- Extract email and contact information from CV files (PDF, JPG, DOC, DOCX).
+- Extract text data from CV files.
+- Swagger API documentation for easy testing and integration.
+- Flexible and scalable Django project structure.
+
 ## Data Extraction
 
 - **Email IDs**: Extracted using regular expressions to match common email patterns.
