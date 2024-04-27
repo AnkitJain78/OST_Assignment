@@ -5,6 +5,7 @@ from drf_yasg import openapi
 from rest_framework import permissions
 from django.conf import settings
 from django.conf.urls.static import static
+from api.views import health_check
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -20,6 +21,7 @@ schema_view = get_schema_view(
 )
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", health_check),
     path("api/v1/", include("api.urls")),
     path(
         "swagger/",
