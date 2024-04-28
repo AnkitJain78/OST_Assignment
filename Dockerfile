@@ -1,4 +1,13 @@
 FROM python:latest
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        libleptonica-dev \
+        tesseract-ocr \
+        tesseract-ocr-dev \
+        libtesseract-dev \
+        poppler-utils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 WORKDIR /app
